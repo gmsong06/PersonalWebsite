@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <h1 id="header">Projects</h1>
+    <div id="filters">
+      <h2>FILTERS</h2>
+      <div class="general">
+        <h3 class="category">GENERAL</h3>
+        <ul class="filters">
+          <input
+            class="general-inputs"
+            type="checkbox"
+            id="websites"
+            name="websites"
+            value="websites"
+          />
+          <label class="general-labels" for="websites">Websites</label>
+          <br />
+          <input
+            class="general-inputs"
+            type="checkbox"
+            id="ios"
+            name="ios"
+            value="ios"
+          />
+          <label class="general-labels" for="websites">IOS</label>
+          <br />
+          <input
+            class="general-inputs"
+            type="checkbox"
+            id="other"
+            name="other"
+            value="other"
+          />
+          <label class="general-labels" for="websites">Other</label>
+          <br />
+        </ul>
+      </div>
+      <div class="language">
+        <h3 class="category">LANGUAGE</h3>
+        <ul class="filters">
+          <input
+            class="general-inputs"
+            type="checkbox"
+            id="html"
+            name="html"
+            value="html"
+            onclick="filter(html)"
+          />
+          <label class="general-labels" for="html">HTML</label>
+          <br />
+          <input
+            class="general-inputs"
+            type="checkbox"
+            id="css"
+            name="css"
+            value="css"
+            onclick="filter(css)"
+          />
+          <label class="general-labels" for="css">CSS</label>
+          <br />
+          <input
+            class="general-inputs"
+            type="checkbox"
+            id="javascript"
+            name="javascript"
+            value="javascript"
+            onclick="filter(javascript)"
+          />
+          <label class="general-labels" for="javascript">Javascript</label>
+          <br />
+          <input
+            class="general-inputs"
+            type="checkbox"
+            id="swiftui"
+            name="swiftui"
+            value="swiftui"
+            onclick="filter(swiftui)"
+          />
+          <label class="general-labels" for="swiftui">SwiftUI</label>
+          <br />
+        </ul>
+      </div>
+    </div>
+    <form class="search-bar" action="action_page.php">
+      <input type="text" placeholder="Search..." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <ul class="projects">
+      <div class="shadow">
+        <div class="project">
+          <h2 class="title">SDGoals On The Go</h2>
+          <p class="tagline">Make an impact</p>
+
+          <a class="learn-more" href="">Learn more</a>
+          <!-- <i
+            id="yt"
+            class="fa fa-youtube-play"
+            style="font-size: 48px; color: red"
+          ></i> -->
+          <p class="description">
+            An IOS app that allows users to make contributions the United
+            Nations Sustainable Development Goals.
+          </p>
+          <img class="logo" src="sdgoals.png" alt="sdgoals" />
+        </div>
+      </div>
+      <div class="shadow">
+        <div class="project">Javascript</div>
+      </div>
+    </ul>
+  </body>
+</html>

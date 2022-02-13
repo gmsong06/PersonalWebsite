@@ -1,0 +1,6 @@
+nav {
+  display: flex;
+}
+#navbarSupportedContent {
+  justify-content: center;
+}

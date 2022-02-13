@@ -1,6 +1,116 @@
-nav {
-  display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(230, 222, 230);
 }
-#navbarSupportedContent {
-  justify-content: center;
+
+/* NAVBAR */
+nav {
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-p {
+  padding: 20px;
+}
+
+/* INTRO */
+
+.intro {
+  margin: 100px;
+}
+.pfp {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 250px;
+}
+
+.intro .bubble {
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+.item-fade {
+  vertical-align: top;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+}
+
+#bubble1 {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  width: 250px;
+  height: 100px;
+  line-height: 100px;
+  font-size: x-large;
+  border-radius: 50px;
+}
+
+#bubble2 {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  width: 250px;
+  height: 100px;
+  line-height: 100px;
+  font-size: x-large;
+  border-radius: 50px;
+}
+
+#bubble3 {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  width: 200px;
+  height: 75px;
+  line-height: 75px;
+  font-size: large;
+  border-radius: 50px;
+}
+
+#bubble4 {
+  position: absolute;
+  top: 65%;
+  right: 5%;
+  width: 250px;
+  height: 75px;
+  line-height: 75px;
+  font-size: larger;
+  border-radius: 50px;
+}
+
+#bubble5 {
+  position: absolute;
+  bottom: -20%;
+  left: 12%;
+  width: 125px;
+  height: 125px;
+  line-height: 125px;
+  font-size: x-large;
+  border-radius: 75px;
+}
+
+#bubble6 {
+  position: absolute;
+  bottom: -20%;
+  right: 12%;
+  width: 200px;
+  height: 75px;
+  line-height: 75px;
+  font-size: large;
+  border-radius: 50px;
 }

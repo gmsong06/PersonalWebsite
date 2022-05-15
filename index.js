@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const ejsMate = require('ejs-mate');
 const methodOverride = require('method-override');
 const favicon = require('serve-favicon');
@@ -14,8 +15,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/public'));
 app.use(methodOverride('_method'));
-app.use(partials());
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
@@ -24,4 +24,5 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     res.render('home')
 });
+
 
